@@ -384,6 +384,8 @@ export interface Bot extends TypedEmitter<BotEvents> {
 
   openEntity: (block: Entity) => Promise<Window>
 
+  extendWindow: (window: Window) => void
+
   moveSlotItem: (
     sourceSlot: number,
     destSlot: number
