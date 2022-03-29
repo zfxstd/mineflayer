@@ -380,9 +380,9 @@ export interface Bot extends TypedEmitter<BotEvents> {
 
   transfer: (options: TransferOptions) => Promise<void>
 
-  openBlock: (block: Block, Class: new () => EventEmitter) => Promise<void>
+  openBlock: (block: Block) => Promise<Window>
 
-  openEntity: (block: Entity, Class: new () => EventEmitter) => Promise<void>
+  openEntity: (block: Entity) => Promise<Window>
 
   moveSlotItem: (
     sourceSlot: number,
